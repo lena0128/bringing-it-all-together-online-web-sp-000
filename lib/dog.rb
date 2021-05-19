@@ -40,8 +40,8 @@ def save
   self
 end
 
-def self.create(name:, breed:)
-  dog = Dog.new(name, breed)
+def self.create(dog_attributes)
+  dog = Dog.new(dog_attributes)
   dog.save
   dog
 end
